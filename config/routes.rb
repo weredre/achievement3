@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   resources :products
-  get 'static_pages/about'
+  get 'static_pages/about' => "static_pages#about"
 
-  get 'static_pages/contact'
+  get 'static_pages/contact' => "static_pages#contact"
 
-  get 'static_pages/index'
+  get 'static_pages/index' => "static_pages#index"
   
   get "static_pages/landing_page" => "static_pages#landing_page"
   # The priority is based upon order of creation: first created -> highest priority.
