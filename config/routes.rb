@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'static_pages#landing_page'
+    #root 'static_pages#landing_page'
+   #root 'static_pages#about'
+    root 'static_pages#contact'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -34,6 +36,7 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+  post 'static_pages/thank_you'
 
   # Example resource route with sub-resources:
   #   resources :products do
