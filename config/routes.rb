@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
  # devise_for :users
-  #resources :users
-  #resources :products
+  resources :users
+  resources :products
   get 'static_pages/about' => "static_pages#about", as: 'about'
 
   get 'static_pages/contact' => "static_pages#contact", as: 'contact'
