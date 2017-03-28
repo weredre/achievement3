@@ -11,7 +11,7 @@
   <div class="carousel-inner" role="listbox">
     <% @products.each_with_index do |product, index| %>
       <div class="item<%= ' active' if index == 0 %>">
-       <%= image_tag(product.image_url, :class => 'carousel-image') %>
+       <%= image_tag(product.image_url, :class => 'carousel-image center-block') %>
         <div class="carousel-caption">
          <%= product.name%>
          <%= link_to "Product details", @products_url%>
