@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :products do
    resources :comments
   end
-  resources :products
+  resources :users
   get 'static_pages/about' => "static_pages#about", as: 'about'
 
   get 'static_pages/contact' => "static_pages#contact", as: 'contact'
