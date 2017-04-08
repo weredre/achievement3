@@ -30,6 +30,7 @@
       <%= link_to 'Back', products_path %>
       <%= render "new_comment" %>
       <%= render "comments" %>
+      <%= will_paginate @comments %>
     </div>
   </div>
 </div>
