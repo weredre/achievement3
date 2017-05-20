@@ -1,8 +1,8 @@
 $(document).on('turbolinks:load', function(){
-   $('.rating').raty( { path: '/assets/'('star-on.png')});
+   $('.rating').raty( { path: '/assets/images'('star-on.png, star-off.png, star-half.png')});
    $('.rating').raty( { path: '/assets/', scoreName: 'comment[rating]' });
  
-  $('.rated').raty({ path: '/assets/'('star-on.png'
+  $('.rated').raty({ path: ''/assets/images'('star-on.png, star-off.png, star-half.png'
      readOnly: true,
      score: function() {
      return $(this).attr('data-score');
