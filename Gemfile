@@ -58,3 +58,4 @@ group :development, :test do
   gem "factory_girl_rails", "~> 4.0"
 end
 gem 'rails-controller-testing'
+gem 'stripe'
