@@ -55,5 +55,6 @@ gem 'cancancan'
 gem 'will_paginate'
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
+  gem "factory_girl_rails", "~> 4.0"
 end
 gem 'rails-controller-testing'
