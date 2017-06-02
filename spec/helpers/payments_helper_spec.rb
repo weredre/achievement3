@@ -10,6 +10,13 @@ require 'rails_helper'
 #     end
 #   end
 # end
+module ProductsHelper
+  def cache_key_for_products
+    count          = Product.count
+    max_updated_at = Product.maximum(:updated_at).try(:utc).try(:to_s, :number)
+    "products/all-#{count}-#{max_updated_at}"
+  end
+end
 RSpec.describe PaymentsHelper, type: :helper do
   pending "add some examples to (or delete) #{__FILE__}"
 end

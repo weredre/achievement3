@@ -2,6 +2,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class= "col-md-4">
+      <% cache @product do %>
       <p>
         <strong>Name:</strong>
         <%= @product.name %>
@@ -24,6 +25,7 @@
         <strong>Price:</strong>
         <%= @product.price %>
       </p>
+      <% end %>
       <%= form_tag "/payments/create" do %>
         <%= render partial: "shared/stripe_checkout_button" %>
         <%= hidden_field_tag(:product_id, "@product.id") %>
