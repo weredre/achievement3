@@ -2,6 +2,7 @@ class PaymentsController < ApplicationController
  	# POST /payments
    # POST /payments.json
  	def create
+ 	  byebug
  		@product = Product.find(params[:product_id])
  		@user = current_user
  		token = params[:stripeToken]
