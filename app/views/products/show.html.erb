@@ -26,6 +26,12 @@
         <%= @product.price %>
       </p>
       <% end %>
+      <h6>  
+          Views:
+          <span class="badge">
+            <%= @product.views %>
+          </span>
+      </h6>  
       <%= form_tag "/payments/create" do %>
         <%= render partial: "shared/stripe_checkout_button" %>
         <%= hidden_field_tag(:product_id, "@product.id") %>
