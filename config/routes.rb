@@ -43,6 +43,8 @@ Rails.application.routes.draw do
   #   end
   post 'static_pages/thank_you'
   post 'payments/create'
+  
+  mount ActionCable.server => '/cable'
 
   # Example resource route with sub-resources:
   #   resources :products do

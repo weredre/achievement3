@@ -68,6 +68,9 @@ Rails.application.configure do
                      :socket_failure_delay => 0.2,
                      :down_retry_delay => 60
                     }
+  config.web_socket_server_url = "wss://alphatrading.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://alphatrading.herokuapp.com', 'http://alphatrading.herokuapp.com']
+
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.

@@ -1,0 +1,2 @@
+adapter: postgresql
+url: postgres://zaxvvlqdjjpvte:405251ae15796511427c3a1abe7d01e70f18e49b8eb8d07fe6417d1a3b0589e4@ec2-54-243-38-139.compute-1.amazonaws.com:5432/ddnmauhls0f8dc
