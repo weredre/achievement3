@@ -4,7 +4,7 @@ class Product < ActiveRecord::Base
   validates :name, presence: true
   validates :price, numericality: true
   validates :description, presence: true
-  validates :image_url, format: { with: %r{\A.(jpg|png)\Z}i, message: 'must be a URL for JPG or PNG image.' }
+  #validates :image_url, format: { with: %r{\A.(jpg|png)\Z}i, message: 'must be a URL for JPG or PNG image.' }
 
   def self.search(search_term)
     if Rails.env.development?
