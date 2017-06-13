@@ -1,4 +1,4 @@
-class ProductChannel < ApplicationCable::Channel
+class ProductChannel < ActionCable::Channel
    def subscribed
      # stream_from "some_channel"
      stream_from "product_channel"
