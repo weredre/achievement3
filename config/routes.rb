@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'static_pages/index' => "static_pages#index"
   
   get "static_pages/landing_page" => "static_pages#landing_page" , as: 'home'
+  # get "products/_product" => "products#_product" , as: 'show'
  # get "payments/create" => "payments#create"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
